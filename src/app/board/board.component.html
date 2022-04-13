@@ -1,0 +1,13 @@
+<div class="Start-text">
+    <h1>{{status}}</h1>
+    <button id="newGameBtn" (click)="newGame()" mat-raised-button color="accent">New Game</button>
+</div>
+<div  class="row" *ngFor="let row of [0,1,2]">
+    <app-square *ngFor="let col of [0,1,2]"
+    [state]="square[col+row*3]" (click)="move(col+row*3)"></app-square>
+</div>
+<!-- <br><br><br><br><br><br> -->
+<div class="restxt">
+    <h2>Player X wins {{xwin}} times.</h2>
+    <h2>Player O wins {{owin}} times.</h2>
+</div>

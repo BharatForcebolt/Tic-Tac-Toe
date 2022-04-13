@@ -1,0 +1,15 @@
+:host{
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid;
+    border-radius: 8px;
+    float: left;
+    text-align: center;
+    background-color: rgba(20, 208, 255, 0.507);
+} 
+h1{
+   margin-top: 35px;
+   font-size: 80px;
+}
